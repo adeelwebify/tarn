@@ -1,0 +1,21 @@
+{
+	"name": "tarn",
+	"version": "1.0.0",
+	"description": "<div align=\"center\">   <h1>🚀 Tarn Framework</h1>   <p><i>A lightweight, elegant, and blazing fast MVC mini-framework for PHP 8.2+.</i></p> </div>",
+	"main": "index.js",
+	"scripts": {
+		"watch": "concurrently \"vite build --watch\" \"npm run dev:css\"",
+		"dev": "concurrently \"vite\" \"npm run dev:css\"",
+		"build": "vite build && npm run build:css",
+		"build:css": "sass resources/scss/main.scss public/build/style.css --no-embed-source-map --source-map",
+		"dev:css": "sass --watch resources/scss/main.scss:public/build/style.css --no-embed-source-map --source-map"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^9.2.1",
+		"sass": "^1.97.3",
+		"vite": "^7.3.1"
+	}
+}

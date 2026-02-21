@@ -1,0 +1,29 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Framework
+/storage/logs/*.log
+/storage/cache/routes.php
+/storage/cache/views/*
+/storage/database.sqlite
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Vite output
+/public/build/
